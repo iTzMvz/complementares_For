@@ -1,3 +1,4 @@
+<meta charset="UTF-8">
 <script>
     //PROBLEMA
     /*
@@ -5,13 +6,13 @@
     Contudo, embora ao final de cada mês o valor investido ainda esteja rendendo 3% (0.03), todo início de mês precisa retirar dinheiro para poder pagar suas dívidas. A quantia utilizada no início de cada mês, que é subtraído do valor investido, é de R$ 300,00.
     Em quantos meses a pessoa terá gasto todo o seu valor investido?
     */
-
     //ENTRADA
-
-
+    let conta = 10000;
+    let meses = 0;
     //PROCESSAMENTO
-
-    
+    for(meses = 0; 0 >= conta; meses++){
+        conta = (conta - 300) * 1.03;
+    }
     //SAÍDA
-    
+    document.write(`O valor de R$10.000,00 será gasto em ${meses} meses`)
 </script>

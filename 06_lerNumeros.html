@@ -1,3 +1,4 @@
+<meta charset="UTF-8">
 <script>
     //PROBLEMA
     /*
@@ -8,11 +9,14 @@
     */
 
     //ENTRADA
-
-
+    let listaDeNumeros = [4, 8, 12, 35, 78, 83, 5, 22, 49, 95];
+    let maior50 = [];
+    let menor50 = [];
     //PROCESSAMENTO
-
-    
+    for(numero of listaDeNumeros){
+        if(numero > 50) maior50.push(numero)
+        else menor50.push(numero)
+    }
     //SAÍDA
-    
+    document.write(`Numeros menores que 50: ${menor50} </br> Porcentagem de números menores que 50: ${(menor50.length * 100 / listaDeNumeros.length).toFixed(2)}% </br></br> Numeros maiores que 50: ${maior50} </br> Porcentagem de números maiores que 50: ${(maior50.length * 100 / listaDeNumeros.length).toFixed(2)}%`)
 </script>

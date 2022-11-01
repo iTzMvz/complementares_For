@@ -1,3 +1,4 @@
+<meta charset="UTF-8">
 <script>
     //PROBLEMA
     /*
@@ -6,13 +7,15 @@
     Apresente os valores para cada um dos períodos.
     Apresente também qual foi o rendimento que a pessoa obteve em cada um dos períodos (ou seja, o que conseguiu obter além da quantia investida).
     */
-
     //ENTRADA
-
-
+    let meses = 0;
+    let investimento = Number(prompt("Informe um valor para investir"));
     //PROCESSAMENTO
-
-    
+    for (meses = 0; meses <= 96; meses++) {
+        investimento = investimento * 1.018;
+        if (meses === 24) document.write(`Valor Inicial Investido: 100  </br></br> Valor do investimento em 24 meses: ${investimento.toFixed(2)} </br> Valor rendido em 24 meses: ${(investimento - 100).toFixed(2)}`)
+        if (meses === 48) document.write(`</br></br> Valor do investimento em 48 meses: ${investimento.toFixed(2)} </br> Valor rendido em 48 meses: ${(investimento - 100).toFixed(2)}`)
+    }
     //SAÍDA
-    
+    document.write(`</br></br> Valor do investimento em 96 meses: ${investimento.toFixed(2)} </br> Valor rendido em 96 meses: ${(investimento - 100).toFixed(2)}`)
 </script>

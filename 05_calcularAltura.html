@@ -1,3 +1,4 @@
+<meta charset="UTF-8">
 <script>
     //PROBLEMA
     /*
@@ -8,11 +9,16 @@
     */
 
     //ENTRADA
-
-
+    let pessoas = parseInt(prompt("Informe a quantidade de pessoas"));
+    let media = 0;
+    let listaAltura = [];
     //PROCESSAMENTO
-
-    
+    for(let i = 1; i <= pessoas; i++){
+        let altura = Number(prompt("Informe a altura em metros dessa pessoa (" + i + "/" + pessoas + ")" ));
+        media = media + altura;
+        listaAltura.push(altura);
+    }
+    media = media / pessoas
     //SAÍDA
-    
+    document.write(`Média das alturas ${media.toFixed(2)}</br>Maior altura: ${listaAltura.sort((a,b) => b - a)[0].toFixed(2)} </br> Menor altura: ${listaAltura.sort((a,b) => a - b)[0].toFixed(2)}`)
 </script>
