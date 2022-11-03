@@ -6,11 +6,14 @@
     */
 
     //ENTRADA
-
-
+    let numero = 0;
+    let resto5 = [];
     //PROCESSAMENTO
+    for(numero = 1000; numero <= 1999; numero++){
+        if(numero % 11 === 5) resto5.push(numero)
+    }
 
     
     //SAÍDA
-    
+    document.write(`Números entre 1000 e 1999 que a divisão por 11 restas 5: ${resto5.join(", ")}`)
 </script>

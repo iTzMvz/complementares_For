@@ -7,11 +7,14 @@
     */
 
     //ENTRADA
-
-
+    let pares = 0;
+    let impares = 0;
     //PROCESSAMENTO
-
+    for(i = 1; i <= 100; i++){
+        if(i % 2 === 0) pares = pares + i
+        else impares = impares + i
+    }
     
     //SAÍDA
-    
+    document.write(`Soma dos pares entre 1 e 100: ${pares} </br> Soma dos impares entre 1 e 100: ${impares}`)
 </script>
