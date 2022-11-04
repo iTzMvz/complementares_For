@@ -12,10 +12,11 @@
     */
 
     //ENTRADA
-
-
+    let tabuada = parseInt(prompt("Informe qual tabuada quer:"));
+    let inicio = parseInt(prompt("Informe qual número começará a tabuada:"));
+    let final = parseInt(prompt("Informe qual número terminará a tabuada:"));
     //PROCESSAMENTO
-
+    for(let i = inicio; i <= final; i++) if(i % 2 > 0) document.write(`${tabuada} X ${i} = ${tabuada * i}</br>`) 
     
     //SAÍDA
 

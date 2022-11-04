@@ -8,11 +8,16 @@
     */
 
     //ENTRADA
-
-
+    let num = parseInt(prompt("Informe um número inteiro e positivo:"));
+    let fatorial = num
     //PROCESSAMENTO
-
-    
+    if(num >= 1) {
+        for(let i = 1; i < num; i++) {
+            fatorial = i * fatorial
+        }
+        document.write(fatorial)
+    }
+    else document.write("Valor Invalido")
     //SAÍDA
-
+    
 </script>

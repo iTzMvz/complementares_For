@@ -15,13 +15,17 @@
     //ENTRADA
     let salarios = [1200, 2500, 3000, 9000, 850, 4000, 1500, 2300, 3800, 1600];
     let numeroDeFilhos = [1, 2, 2, 1, 3, 2, 3, 3, 0, 4];
+    let mediaFilhos = 0;
+    let mediaSalario= 0;
+    let salario3k = 0;
     //PROCESSAMENTO
     for(salario of salarios){
-
+        mediaSalario = mediaSalario + salario;
+        if(salario <= 3000) salario3k++;
     }
-    for(filho of numeroDeFilhos){
-        
-    }
+    for(filho of numeroDeFilhos) mediaFilhos = mediaFilhos + filho;
+    mediaSalario = mediaSalario / salarios.length;
+    mediaFilhos = mediaFilhos / numeroDeFilhos.length;
     //SAÍDA
-
+    document.write(`Média dos salarios: R$ ${mediaSalario.toFixed(2)}</br>Maior salario: R$ ${salarios.sort((a,b) => b-a)[0].toFixed(2)}</br>Percentual de Famílias com salario até R$3000: ${salario3k}</br>Média do número de filhos: ${mediaFilhos.toFixed(2)}`)
 </script>

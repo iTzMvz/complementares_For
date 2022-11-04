@@ -10,10 +10,11 @@
 
     //ENTRADA
     let fibonacci = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89];
+    let ii = fibonacci.length
     let add = 0;
     let user = parseInt(prompt(`Informe quantos números deseja adiconar na sequência de fibonacci (Sequência atual: 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89):`));
     //PROCESSAMENTO
-    for(i = fibonacci.length; i <= user + fibonacci.length; i++){
+    for(let i = ii; i < user + ii; i++){
         add = fibonacci[i - 1] + fibonacci[i - 2]
         fibonacci.push(add)
     }

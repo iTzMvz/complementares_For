@@ -16,10 +16,15 @@
     let romance = [];
     //PROCESSAMENTO
 for(let i = 1; i <= qntFilmes; i++){
-    let generoFilme = prompt("Informe o gênero do filme(Comédia-C|Drama-D|Romance-C)")
+    let generoFilme = prompt("Informe o gênero do filme(Comédia-C|Drama-D|Romance-C)").toLowerCase()
     let filme = prompt("Qual o nome do filme?");
+    if(generoFilme === "c") comedia.push(filme)
+    else if(generoFilme === "d") drama.push(filme)
+    else if(generoFilme === "r") romance.push(filme)
 }
     
     //SAÍDA
-    
+    if(comedia.length > 0) document.write(`Filmes de comédia: ${comedia} </br>`)
+    if(drama.length > 0) document.write(`Filmes de drama: ${drama}</br>`)
+    if(romance.length > 0) document.write(`Filmes de romance: ${romance}</br>`)
 </script>

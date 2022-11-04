@@ -9,11 +9,12 @@
     */
 
     //ENTRADA
-
-
+    let notasProgramacaoI = [4, 3, 5, 10, 9, 2, 7, 10, 8, 7, 6, 1, 5, 2, 3];
+    let media = 0;
     //PROCESSAMENTO
-
+    for(let nota of notasProgramacaoI) media = media + nota
+    media = media / notasProgramacaoI.length
     
     //SAÍDA
-    
+    document.write(`Média da sala: ${media.toFixed(1)}</br> Maior média: ${notasProgramacaoI.sort((a,b) => b-a)[0].toFixed(1)}</br> Menor média: ${notasProgramacaoI.sort((a,b) => a-b)[0].toFixed(1)}`)
 </script>
