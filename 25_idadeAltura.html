@@ -10,10 +10,21 @@
     */
 
     //ENTRADA
-
-
+    let pesoMais50 = [];
+    let somaMais50 = 0;
+    let pesoMenos25 = [];
+    let somaMenos25 = 0;
+    let pessoas = [];
+    let somaPessoas = 0;
     //PROCESSAMENTO
-
+    for(i = 1; i <= 10; i++){
+        let idade = parseInt(prompt("Informe a idade da pessoa"))
+        let peso = Number(prompt("Informe o peso da pessoa"))
+        if(idade > 50 ) {
+            pessoas.push(peso);
+            pesoMais50.push(peso);
+        }
+    }
     
     //SAÍDA
 

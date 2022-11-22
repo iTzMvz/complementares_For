@@ -10,12 +10,20 @@
     - Saída: 4, 6, 8, 10
     - Soma: 28
     */
-
+    let limiteInferior = parseInt(prompt("Informe o limite inferior"));
+    let limiteSuperior = parseInt(prompt("Informe o limite superior"));
+    let pares = [];
+    let soma = 0;
     //ENTRADA
-
+    for(let i = limiteInferior + 1; i < limiteSuperior; i++){
+        if(i % 2 === 0){
+            pares.push(i)
+            soma = soma + i
+        }
+    }
 
     //PROCESSAMENTO
-
+    document.write(`Limite Inferior: ${limiteInferior} </br> Limite Superior: ${limiteSuperior} </br> Números pares desse intervalo: ${pares.join(", ")}</br> Soma dos pares:${soma}`)
     
     //SAÍDA
 
